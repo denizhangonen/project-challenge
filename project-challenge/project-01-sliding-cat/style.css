@@ -10,9 +10,11 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: #222;
 }
 
 .container {
@@ -27,9 +29,11 @@ body {
   height: 80vh;
   flex: 0.5;
   margin: 10px;
-  border-radius: 70px;
+  border-radius: 10px;
   transition: flex 0.88s ease-in;
   position: relative;
+  cursor: pointer;
+  opacity: 0.4;
 }
 
 .panel h3 {
@@ -43,6 +47,7 @@ body {
 
 .panel.active {
   flex: 5;
+  transition: opacity 1.4s ease-in 0s;
   opacity: 1;
 }
 
