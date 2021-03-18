@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -43,6 +39,7 @@ body {
   left: 20px;
   opacity: 0;
   margin: 0;
+  color: #eee;
 }
 
 .panel.active {
@@ -64,4 +61,12 @@ body {
   .panel:nth-of-type(5) {
     display: none;
   }
+}
+
+.remove-active-btn {
+  transition: transform 1s;
+  z-index: 10;
+}
+.remove-active-btn:hover {
+  transform: rotate(90deg) scale(20) translateY(50%) translateX(50%);
 }
