@@ -70,7 +70,7 @@ body {
 }
 
 .menu-container.open {
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 /* End of Animation */
